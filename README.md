@@ -8,6 +8,9 @@ OUTPUT OF TYPECAST
 ![2023-01-23](https://user-images.githubusercontent.com/102512105/214056003-246a0889-e0d0-42a7-bb2e-cc704943a8a2.png)
 OUTPUT OF UNARY
 ![2023-01-24 (1)](https://user-images.githubusercontent.com/102512105/214269990-67f2a04d-5288-4398-ace9-1b53399ee203.png)
+OUTPUT OF ASSIGNMENT
+![2023-01-24 (3)](https://user-images.githubusercontent.com/102512105/214279175-b39fbbc6-8afb-4e7f-9ae6-a5e4ed974005.png)
+
 
 
 
