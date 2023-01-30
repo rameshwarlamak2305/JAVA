@@ -14,6 +14,8 @@ OUTPUT OF ARITHMETIC
 ![2023-01-24 (2)](https://user-images.githubusercontent.com/102512105/214279728-a9b04a2a-46fa-485b-aa1e-91e238840f00.png)
 OUTPUT OF LOGICAL-BITWISE
 ![2023-01-24 (5)](https://user-images.githubusercontent.com/102512105/214350566-13b7c15c-f816-4678-8e97-ce5ed7947b94.png)
+OUTPUT OF CONDITIONAL STATEMENT
+![2023-01-30 (3)](https://user-images.githubusercontent.com/102512105/215475421-62758250-d6fe-4f35-b6b3-a73f033c7f32.png)
 
 
 
