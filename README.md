@@ -16,6 +16,9 @@ OUTPUT OF LOGICAL-BITWISE
 ![2023-01-24 (5)](https://user-images.githubusercontent.com/102512105/214350566-13b7c15c-f816-4678-8e97-ce5ed7947b94.png)
 OUTPUT OF CONDITIONAL STATEMENT
 ![2023-01-30 (3)](https://user-images.githubusercontent.com/102512105/215475421-62758250-d6fe-4f35-b6b3-a73f033c7f32.png)
+OUTPUT OF EXAMPLE
+![2023-01-30 (4)](https://user-images.githubusercontent.com/102512105/215475773-5b39c19f-c089-4a09-abe4-4c4778c645d5.png)
+
 
 
 
