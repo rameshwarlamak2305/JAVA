@@ -20,6 +20,9 @@ OUTPUT OF EXAMPLE
 ![2023-01-30 (4)](https://user-images.githubusercontent.com/102512105/215475773-5b39c19f-c089-4a09-abe4-4c4778c645d5.png)
 OUTPUT OF MY CONSTRUCTOR
 ![2023-02-01](https://user-images.githubusercontent.com/102512105/216027780-94dc1e5c-0b96-4102-b530-921e99d371a4.png)
+OUTPUT OF LOOPS IN JAVA
+![2023-02-01 (3)](https://user-images.githubusercontent.com/102512105/216122016-9551d112-1fa8-4c3c-bdb4-a3c42ea243a9.png)
+
 
 
 
