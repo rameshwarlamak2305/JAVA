@@ -26,6 +26,9 @@ OUTPUT OF AGRREGATION
 ![2023-02-06 (3)](https://user-images.githubusercontent.com/102512105/217029041-cec0819c-e533-459d-854a-cfeb5d8ea723.png)
 OUTPUT OF OVERLOADING
 ![2023-02-06 (2)](https://user-images.githubusercontent.com/102512105/217029544-08e490b6-e8fa-4ed9-860c-aa49dd5da5e8.png)
+OUTPUT OF OVERRIDING
+![2023-02-06 (1)](https://user-images.githubusercontent.com/102512105/217029969-d3c1404b-030c-4c7b-b8a4-61554994db12.png)
+
 
 
 
