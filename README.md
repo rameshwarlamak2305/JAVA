@@ -24,6 +24,8 @@ OUTPUT OF LOOPS IN JAVA
 ![2023-02-01 (3)](https://user-images.githubusercontent.com/102512105/216122016-9551d112-1fa8-4c3c-bdb4-a3c42ea243a9.png)
 OUTPUT OF AGRREGATION
 ![2023-02-06 (3)](https://user-images.githubusercontent.com/102512105/217029041-cec0819c-e533-459d-854a-cfeb5d8ea723.png)
+OUTPUT OF OVERLOADING
+![2023-02-06 (2)](https://user-images.githubusercontent.com/102512105/217029544-08e490b6-e8fa-4ed9-860c-aa49dd5da5e8.png)
 
 
 
