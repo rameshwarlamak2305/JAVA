@@ -22,6 +22,8 @@ OUTPUT OF MY CONSTRUCTOR
 ![2023-02-01](https://user-images.githubusercontent.com/102512105/216027780-94dc1e5c-0b96-4102-b530-921e99d371a4.png)
 OUTPUT OF LOOPS IN JAVA
 ![2023-02-01 (3)](https://user-images.githubusercontent.com/102512105/216122016-9551d112-1fa8-4c3c-bdb4-a3c42ea243a9.png)
+OUTPUT OF AGRREGATION
+![2023-02-06 (3)](https://user-images.githubusercontent.com/102512105/217029041-cec0819c-e533-459d-854a-cfeb5d8ea723.png)
 
 
 
