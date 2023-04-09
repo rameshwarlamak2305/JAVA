@@ -1,0 +1,102 @@
+1.Create Table
+
+a.Write a SQL statement to create a table named jobs including columns job_id,
+ job_title, min_salary, max_salary and check whether the max_salary amount exceeding the upper limit 25000.
+Enter password: ********
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 51
+Server version: 8.0.32 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mydatabase         |
+| mysql              |
+| performance_schema |
+| ramdatabase        |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+8 rows in set (0.01 sec)
+
+mysql> use mydatabase;
+Database changed
+mysql> show tables;
++----------------------+
+| Tables_in_mydatabase |
++----------------------+
+| attendance           |
+| book1                |
+| dept                 |
+| emp                  |
+| jdbc                 |
++----------------------+
+5 rows in set (0.01 sec)
+
+mysql> create table jobs(job_id varchar(7),job_title varchar(20),min_salary int,max_salary int,check(max_salary<=25000));
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> select * from jobs;
+Empty set (0.01 sec)
+
+mysql> desc jobs;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| job_id     | varchar(7)  | YES  |     | NULL    |       |
+| job_title  | varchar(20) | YES  |     | NULL    |       |
+| min_salary | int         | YES  |     | NULL    |       |
+| max_salary | int         | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)
+b. Write a SQL statement to create a table named countries including columns country_id, 
+country_name and region_id and make sure that no countries except Italy, India and China 
+will be entered in the table.
+
+mysql> create table countries (
+    ->  country_id varchar(7),
+    ->  country_name varchar(20),
+    ->  region_id varchar(7),
+    ->  check(country_name in ('Italy','India','China'))
+    -> );
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc countries;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| country_id   | varchar(7)  | YES  |     | NULL    |       |
+| country_name | varchar(20) | YES  |     | NULL    |       |
+| region_id    | varchar(7)  | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+
+c.Write a SQL statement to create a table job_history including columns employee_id, start_date, end_date,
+ job_id and department_id and make sure that, the employee_id column does not contain any duplicate value 
+at the time of insertion  .
+
+mysql> create table job_history(employee_id varchar(7) unique,start_date date,end_date date,job_id varchar(7),department_id varchar(7));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc job_history;
++---------------+------------+------+-----+---------+-------+
+| Field         | Type       | Null | Key | Default | Extra |
++---------------+------------+------+-----+---------+-------+
+| employee_id   | varchar(7) | YES  | UNI | NULL    |       |
+| start_date    | date       | YES  |     | NULL    |       |
+| end_date      | date       | YES  |     | NULL    |       |
+| job_id        | varchar(7) | YES  |     | NULL    |       |
+| department_id | varchar(7) | YES  |     | NULL    |       |
++---------------+------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
