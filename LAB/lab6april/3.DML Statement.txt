@@ -1,0 +1,27 @@
+3.DML Statement
+
+a.Write a SQL statement to insert a record with your own value into the table countries against each columns.
+
+mysql> insert into country_new
+    -> values('1','India','Asia');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into country_new
+    -> values('2','italy','europe');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into country_new
+    -> values('3','China','Asia');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> delect * from country_new;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delect * from country_new' at line 1
+mysql> select * from country_new;
++--------+--------------+-----------+
+| con_id | country_name | region_id |
++--------+--------------+-----------+
+| 1      | India        | Asia      |
+| 2      | italy        | europe    |
+| 3      | China        | Asia      |
++--------+--------------+-----------+
+3 rows in set (0.00 sec)

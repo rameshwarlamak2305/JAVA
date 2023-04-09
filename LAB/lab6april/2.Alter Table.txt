@@ -1,0 +1,43 @@
+2.Alter Table
+
+a.Write a SQL statement to add a foreign key constraint named fk_job_id on job_id column of 
+job_history table referencing to the primary key job_id of jobs table.
+
+ALTER TABLE job_history
+ADD CONSTRAINT fk_job_id
+FOREIGN KEY (job_id) REFERENCES jobs(job_id);
+
+b.Write a SQL statement to rename the table countries to country_new.
+
+mysql> alter table countries
+    -> rename country_new;
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc country_new;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| country_id   | varchar(7)  | YES  |     | NULL    |       |
+| country_name | varchar(20) | YES  |     | NULL    |       |
+| region_id    | varchar(7)  | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+c.Write a SQL statement to change the name of the column country_id to con_id, 
+keeping the data type and size same.
+
+
+mysql> alter table country_new
+    -> rename column country_id to con_id;
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc country_new;
++--------------+-------------+------+-----+---------+-------+
+| Field        | Type        | Null | Key | Default | Extra |
++--------------+-------------+------+-----+---------+-------+
+| con_id       | varchar(7)  | YES  |     | NULL    |       |
+| country_name | varchar(20) | YES  |     | NULL    |       |
+| region_id    | varchar(7)  | YES  |     | NULL    |       |
++--------------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
