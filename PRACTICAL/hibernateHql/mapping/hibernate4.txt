@@ -1,0 +1,118 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mydatabase         |
+| mysql              |
+| performance_schema |
+| ramdatabase        |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+8 rows in set (0.02 sec)
+
+mysql> use mydatabase;
+Database changed
+mysql> show tables;
++----------------------+
+| Tables_in_mydatabase |
++----------------------+
+| admin                |
+| attendance           |
+| book1                |
+| country_new          |
+| course               |
+| customer_details     |
+| dept                 |
+| emp                  |
+| employee             |
+| hibernate_sequence   |
+| jdbc                 |
+| job_history          |
+| jobs                 |
+| student              |
+| student_course       |
+| temp                 |
++----------------------+
+16 rows in set (0.01 sec)
+
+mysql> select * from student_course;
+Empty set (0.00 sec)
+
+mysql> select * from student_course;
+Empty set (0.00 sec)
+
+mysql> show tables;
++----------------------+
+| Tables_in_mydatabase |
++----------------------+
+| address              |
+| admin                |
+| attendance           |
+| book1                |
+| country_new          |
+| course               |
+| customer_details     |
+| dept                 |
+| emp                  |
+| employee             |
+| hibernate_sequence   |
+| jdbc                 |
+| job_history          |
+| jobs                 |
+| student              |
+| student_course       |
+| temp                 |
++----------------------+
+17 rows in set (0.00 sec)
+
+mysql> select * from student_course;
++--------------------+-----------------+
+| Student_rollNumber | course_courseId |
++--------------------+-----------------+
+|                  1 |             101 |
+|                  1 |             102 |
++--------------------+-----------------+
+2 rows in set (0.00 sec)
+
+mysql> desc student_course;
++--------------------+------+------+-----+---------+-------+
+| Field              | Type | Null | Key | Default | Extra |
++--------------------+------+------+-----+---------+-------+
+| Student_rollNumber | int  | NO   | MUL | NULL    |       |
+| course_courseId    | int  | NO   | PRI | NULL    |       |
++--------------------+------+------+-----+---------+-------+
+2 rows in set (0.01 sec)
+
+mysql> select * from address;
+Empty set (0.01 sec)
+
+mysql> select * from course;
++----------+----------------+------------+
+| courseId | courseDuration | courseName |
++----------+----------------+------------+
+|      101 | 6month         | java       |
+|      102 | 2month         | Aws        |
++----------+----------------+------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from student;
++------------+-------------+
+| rollNumber | studentName |
++------------+-------------+
+|          1 | mahesh      |
++------------+-------------+
+1 row in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+
+
+
+
