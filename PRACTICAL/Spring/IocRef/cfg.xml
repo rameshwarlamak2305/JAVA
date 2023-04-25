@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- <bean id="emp" class="Spring.EmpSpring.Employee">
+		 <property name="empId" value="1"></property>
+		<property name="empname" value="Mahesh"></property>
+		<property name="empSalary" value="1000000"></property>
+		adding value of collection
+		<property name="empMobile">
+			<list>
+				<value>122456</value>
+				<value>34568</value>
+
+			</list>
+		</property>
+		<property name="empaddress">
+			<set>
+				<value>shegaon</value>
+				<value>mumbai</value>
+
+			</set>
+
+		</property>
+		<property name="deptDetails">
+			<map>
+				<entry key="cse" value="3pm"></entry>
+				<entry key="IT" value="6pm"></entry>
+
+			</map>
+
+
+		</property>
+ 
+	</bean> -->
+	<bean id="simjio" class="Spring.EmpSpring.Sim">
+	
+	<property name="simNumber" value="1223346677"></property>
+	<property name="number" value="9765766"></property>
+	
+	
+	</bean>
+	<bean id="mob" class="Spring.EmpSpring.Mobile">
+	<property name="brand" value="samsung"></property>
+	<property name="mobileColor" value="black"></property>
+	<property name="modelnumber" value="a4"></property>
+	
+	<property name="sim" ref="simjio"></property>
+	
+	</bean>
+
+</beans>
