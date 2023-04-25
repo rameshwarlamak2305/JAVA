@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<!-- Setter injection <bean id="s1" class="Spring.Spring2.Student"> <property 
+		name="rollNumber"> <value>1</value> </property> <property name="name"> <value>ram</value> 
+		</property> </bean> <bean class="Spring.Spring2.Student" id="s2"> <property 
+		name="name" value="pavan"></property> <property name="rollNumber" value="2"></property> 
+		</bean> -->
+	<!-- Constructor Injection -->
+	<!-- <bean name="s1" class="Spring.Spring2.Student"> <constructor-arg value="mahesh"></constructor-arg> 
+		<constructor-arg value="1"></constructor-arg> </bean> -->
+
+
+<!-- by lombok -->
+
+	<bean id="student1" class="Spring.Spring2.Student">
+		<property name="rollNumber" value="1"></property>
+		<property name="name" value="abc"></property>
+		<!--adding value of collection -->
+		<property name="mobile">
+			<list>
+				<value>122456</value>
+				<value>34568</value>
+
+			</list>
+		</property>
+		<property name="address">
+			<set>
+				<value>shegaon</value>
+				<value>mumbai</value>
+
+			</set>
+
+		</property>
+		<property name="course">
+			<map>
+				<entry key="java" value="3month"></entry>
+				<entry key="css" value="1month"></entry>
+
+			</map>
+
+
+		</property>
+
+	</bean>
+
+</beans>
